@@ -54,7 +54,7 @@
     
     UIButton *button               = [UIButton buttonWithType:UIButtonTypeCustom];
     button.titleLabel.font         = [UIFont boldSystemFontOfSize:15.0f];
-    button.titleLabel.shadowOffset = CGSizeMake(0, -1);
+  //    button.titleLabel.shadowOffset = CGSizeMake(0, -1);
     button.titleEdgeInsets         = UIEdgeInsetsMake(0, 2, 0, 2);
     button.contentStretch          = CGRectMake(0.5, 0.5, 0, 0);
     button.contentMode             = UIViewContentModeScaleToFill;
@@ -86,7 +86,7 @@
 -(id)initWithFrame:(CGRect)frame
 {
     if ((self = [super initWithFrame:frame])) {
-        [self setupToolbar:@"Send"];
+      [self setupToolbar:NSLocalizedString(@"sendComment", nil)];
     }
     return self;
 }
@@ -94,7 +94,7 @@
 -(id)init
 {
     if ((self = [super init])) {
-        [self setupToolbar:@"Send"];
+      [self setupToolbar:NSLocalizedString(@"sendComment", nil)];
     }
     return self;
 }
